@@ -68,4 +68,5 @@ Create a list of your favorite subjects (as strings).
 Use the join() function to combine all subjects into a single string separated by commas.
 Then create another version using " - " as the separator.
 Print both the original list and both joined strings.
+
 """
