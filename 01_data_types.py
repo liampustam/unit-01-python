@@ -21,21 +21,39 @@ Write code that takes a number as input and prints whether
 it's positive, negative, or zero using if-elif-else statements.
 """
 
-# Made if sum > 0 is positive
+sum = float(input("Enter a number: "))
+
+    # Check if the number is positive, negative, or zero
 if sum > 0:
-    print("positive")
-# Made else if sum = 0 its just zero
-elif sum == 0:
-    print("0")
-# Made else its negatice
+    print("It is a positive number")
+elif sum < 0:
+    print("It is a negative number.")
 else:
-    print("negative")
+    print("It is zero.")
+
 """
 TASK 3:
 
 Write code that takes two numbers as input (an integer and a float), 
 performs addition, subtraction, multiplication, and division, and prints the results.
 """
+
+input1 = input("Whats Your first number?: ")
+
+num1 = float(input1)
+
+print(type(num1))
+
+
+
+input2 = input("What is your second number?: ")
+
+num2 = float(input2)
+
+
+print(type(num2))
+
+print
 
 """
 TASK 4:
@@ -44,6 +62,8 @@ Create a dictionary with keys as fruit names and values as their respective quan
 Then print out the quantity of one of the fruits.
 """
 # Made dictionary of fruits
+fruit = float(input("What fruit would you like to search for: "))
+
 x = {
     "peaches": 7,
     "apples": 6,
@@ -53,7 +73,7 @@ x = {
 
 # Printed out the number of pineapples
 
-print( x["pineapple"])
+print(fruit)
 
 """
 TASK 5:
