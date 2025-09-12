@@ -20,6 +20,7 @@ TASK 2:
 Write code that takes a number as input and prints whether 
 it's positive, negative, or zero using if-elif-else statements.
 """
+
 # Made if sum > 0 is positive
 if sum > 0:
     print("positive")
