@@ -64,9 +64,30 @@ Calculate the cost of shipping for an online order based on the order weight and
 The shipping cost is $5 per kilogram for Zone A and $7 per kilogram for Zone B. 
 If the order weight is less than 0 kg, return an error message.
 '''
-destination = input("What zone is it going to?: ")
 
+# Ask Destination
+destination = input("What zone is it going to?: A or B: ")
+
+# Ask weight
 weight = float(input("How much does the package weight?: "))
+
+# Does the math
+sum1 = weight * 5
+
+sum2 = weight * 7
+
+# Error if less than 0
+if weight <= 0:
+    print("Error")
+
+#Checks to see where it is and calculates price
+if destination == "A" : 
+    weight * 5 
+    print(sum1)
+elif destination == "B": 
+    weight * 7
+    print(sum2)
+
 
 
 
@@ -75,3 +96,18 @@ Exercise 6:
 Determine the type of a triangle based on side lengths.
 Equilateral, Isosceles, Scalene, or Not a triangle.
 '''
+
+side1 = input("What is the length of side 1 : ")
+
+side2 = input("What is the length sode side 2: ")
+
+side3 = input("What is the side of line 3: ")
+
+if side1 == side2 and side1 == side3 and side2 == side3 :
+    print("It is a Equilateral triangle ")
+elif side1 == side2 or side2 == side3 or side1 == side3:
+    print("It is a Isoceles triangle")
+elif side1 != side2 or side2 != side3 or side1 != side3:
+    print('It is a Scalene triangle')
+else:
+    print("You do not have a triangle")
