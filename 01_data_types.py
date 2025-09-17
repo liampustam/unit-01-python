@@ -73,7 +73,7 @@ x = {
 
 # Printed out the number of pineapples
 
-print(fruit)
+print(f"{fruit}")
 
 """
 TASK 5:
