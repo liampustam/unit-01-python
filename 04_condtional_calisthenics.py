@@ -58,6 +58,7 @@ Check if a year is a century year and a leap year.
 '''
 
 
+
 '''
 Exercise 5:
 Calculate the cost of shipping for an online order based on the order weight and destination zone. 
@@ -77,16 +78,16 @@ sum1 = weight * 5
 sum2 = weight * 7
 
 # Error if less than 0
-if weight <= 0:
-    print("Error")
-
+if weight > 0:
 #Checks to see where it is and calculates price
-if destination == "A" : 
-    weight * 5 
-    print(sum1)
-elif destination == "B": 
-    weight * 7
-    print(sum2)
+    if destination == "A" : 
+        weight * 5 
+        print(sum1)
+    if destination == "B": 
+        weight * 7
+        print(sum2)
+else:
+    print("Error: Insufficient Weight")
 
 
 
