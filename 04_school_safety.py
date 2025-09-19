@@ -26,7 +26,7 @@ if classes == "programming" or "typing" or "research":
         else:
             print("class is not long enough")
     # Checking to see if the class is either typing or research
-    if classes == "typing" or "research":
+    if classes == "typing" or classes ==  "research":
      # Making sure the class is atleast 45 minutes
         if period >= 45:
             # Checking to see if someone in the class has accommodations
