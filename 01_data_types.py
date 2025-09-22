@@ -81,7 +81,14 @@ TASK 5:
 Create a string variable with that is a list of numbers and convert that string into a tuple.
 Then print out the both the original string and tuple.
 """
-str
+numbers = "1, 2, 3, 4, 5,"
+
+tuple =  tuple(numbers)
+
+print(numbers)
+print(tuple)
+
+
 """
 TASK 6:
 

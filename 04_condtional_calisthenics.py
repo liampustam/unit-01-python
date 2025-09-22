@@ -97,17 +97,20 @@ Exercise 6:
 Determine the type of a triangle based on side lengths.
 Equilateral, Isosceles, Scalene, or Not a triangle.
 '''
-
+#Asks for side 1
 side1 = input("What is the length of side 1 : ")
-
+#Asks for side 2
 side2 = input("What is the length sode side 2: ")
-
+#Asks for side 3
 side3 = input("What is the side of line 3: ")
 
+#Checks if all slides are equal
 if side1 == side2 and side1 == side3 and side2 == side3 :
     print("It is a Equilateral triangle ")
+    #Checks to see if atleast 1 side is equal to another
 elif side1 == side2 or side2 == side3 or side1 == side3:
     print("It is a Isoceles triangle")
+    #Checks to see if none of the sides are equal to eachotehr
 elif side1 != side2 or side2 != side3 or side1 != side3:
     print('It is a Scalene triangle')
 else:
