@@ -61,6 +61,6 @@ a = {
     "banana": 3,
 
 }
-
+#It prints out just the name of the fruits not how much is in it
 for x in a:
     print(x)
