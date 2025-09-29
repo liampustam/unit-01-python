@@ -24,10 +24,7 @@ engagement_summary = {
 
 #Calculating the click rate
 total_emails = len(email_list)
-opened_emails = engagement_summary["opened"]
 clicked_emails = engagement_summary["clicked"]
-bounced_emails = engagement_summary["bounced"]
-unsubscribed_emails = engagement_summary["unsubscribed"]
 click_rate = (clicked_emails / total_emails) * 100  
 
 #Checking the success rate
@@ -47,7 +44,7 @@ for domain in domain_counts:
 #Printing everything
 print("Campaign Name:", campaign_name)
 print("Campaign Type:", campaign_type)
-print("Click Rate:", click_rate)
+print("Click Rate:", click_rate )
 print("Success =", success )
 
 
