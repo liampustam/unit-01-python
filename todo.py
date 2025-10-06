@@ -5,7 +5,8 @@ r = "remove"
 i = 1
 
 todo_list = []
-
+with open("todos.txt") as file:
+    todo_list = file.readlines()
 #Makes sure the list runs forever
 while 1 > 0:
     print("-----------------------------")
@@ -37,11 +38,11 @@ while 1 > 0:
     elif check == "edit":
         print()
         edit = int(input("What # would you like to edit?: "))
-        todo_list[edit -1]
         print()
         pick = input("What would you like it to say?: ")
-        todo_list.replace(pick)
-
+        todo_list[edit -1] = pick
+        with open("todos.txt") as file:
+            file.writelines(todo_list)
 
 #If its not an option, theres an error
     else:
