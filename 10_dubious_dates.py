@@ -46,6 +46,6 @@ birthday = datetime.strptime(ask, "%m/%d/%Y")
 
 time_not = datetime.today()
 
-a = time_not - birthday
+ahh = time_not - birthday
 
-print(a)
+print(ahh)
