@@ -45,7 +45,7 @@ print(result)
 4. Password Guessing Game:
 Create a simple password guessing game using a while loop. Ask the user to guess a predefined password and provide appropriate feedback.
 """
-
+#If the passwprd is wrong then you keep on trying till its right
 guess = input("What do you think the password is: ")
 
 correct_password = "hello"
@@ -68,7 +68,7 @@ Write a program that calculates the sum of the digits of a given number using a 
 Write a program that prints the first n numbers in the Fibonacci sequence using a while loop.
 """
 
-
+#Prints the fibonacci
 i = 0
 
 a = i - 1

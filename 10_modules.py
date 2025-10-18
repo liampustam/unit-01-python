@@ -18,25 +18,35 @@ os.getcwd()
 var_list = os.listdir()
 print(var_list)
 
-"""
-Task 3 (os module):
-Write a program that checks if a directory called "data" exists in the current 
-working directory. If it doesn't exist, create it. If it does exist, print 
-"Directory already exists."
-"""
+data_dir = "data"
 
-#if data in os.
+if not os.path.exists(data_dir):
+    os.mkdir(data_dir)
+    print(f"Directory '{data_dir}' created.")
+else:
+    print("Directory already exists.")
+
+
 """
 Task 4 (os.path module):
 Write a program that checks if a file called "config.txt" exists in the current directory.
 If it exists, print its path. If it doesn't exist, print "File not found."
 """
+#Checks to see if the file is ine there
+file_name = "05_calculator.py"
+if os.path.isfile(file_name):
+    print("File found:", os.path.abspath(file_name))
+else:
+    print("File not found.")
 
 
 """
 Task 5 (sys module):
 Write a program that prints the Python version you are currently using.
 """
+
+#Prints the python version that I am currectly using
+print("Python version:", sys.version)
 
 
 """
@@ -45,3 +55,15 @@ Write a program that prints the platform your Python interpreter is running on
 (e.g., 'linux', 'win32', 'darwin'). The output should be user friendly names
 "Linux", "Windows", "MacOS"
 """
+
+#Tells me what platform in running on
+platform = sys.platform
+
+if platform.startswith("linux"):
+    print("Platform: Linux")
+elif platform.startswith("win"):
+    print("Platform: Windows")
+elif platform.startswith("darwin"):
+    print("Platform: MacOS")
+else:
+    print("Platform: Unknown")
