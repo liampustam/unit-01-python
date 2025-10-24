@@ -10,7 +10,7 @@ them to include appropriate try/except blocks to handle exceptions gracefully.
 Example 1: Division
 """
 
-
+#Added the except ZeroDivisionError
 def divide_numbers(num1, num2):
    try:
        result = num1 / num2
@@ -25,7 +25,7 @@ divide_numbers(10, 0)
 Example 2: Opening Files
 """
 
-
+#Added the FileNotFoundError
 def read_file(filename):
    try:
         file = open(filename, 'r')       
@@ -45,7 +45,7 @@ read_file("nonexistent.txt")
 Example 3: List Items
 """
 
-
+#Added the IndexError
 def get_item(lst, index):
    try:
        item = lst[index]
@@ -64,7 +64,7 @@ get_item(my_list, 5)
 Example 4: Dictionaries
 """
 
-
+#Added the Key Error
 def get_value(dictionary, key):
    try:
        value = dictionary[key]
@@ -82,6 +82,8 @@ Example 5: Else/Finally
 Modify the following code to include an else block to execute code if no exceptions occur 
 and a finally block to ensure that a certain action is always performed, regardless of whether an exception is raised.
 """
+
+#Added an else statement so that if the file was found it would print the file was found
 def process_file(filename):
     try:
         with open(filename, 'r') as file:
@@ -91,6 +93,7 @@ def process_file(filename):
         print("Error: File not found.")
     else:
         print("File was found")
+#if the file or is not found it would print finished looking for file
     finally:
         print("Finished looking for file ")
 
