@@ -62,15 +62,17 @@ Include methods for depositing and withdrawing money, which should modify the ba
 Test these methods with instances of the class.
 """
 
+#Main class BankAccount
 class BankAccount:
     def __init__(self, balance, owner):
         self.balance = balance
         self.owner = owner
-
+    #TAkes how much is in your account and adds a number
     def deposit(self, amount):  
         if amount > 0:
             self.balance += amount
             print(f"Successfullt depostitied ${amount}. Your new balance is ${self.balance}")
+    #Subtracts how much you would like to withdraw from your balance
     def withdraw(self, amount_2):
         if amount_2 < 0:
             self.balance -= amount_2
