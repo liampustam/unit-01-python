@@ -70,4 +70,8 @@ class BankAccount:
     def deposit(self, amount):  
         if amount > 0:
             self.balance += amount
-            print
+            print(f"Successfullt depostitied ${amount}. Your new balance is ${self.balance}")
+    def withdraw(self, amount_2):
+        if amount_2 < 0:
+            self.balance -= amount_2
+            print(f"Successfully withdrew ${amount_2}. Your new balance is ${self.balance}")
